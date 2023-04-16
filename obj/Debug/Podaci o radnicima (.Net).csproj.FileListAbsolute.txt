@@ -1,0 +1,11 @@
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\bin\Debug\Podaci o radnicima (.Net).exe.config
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\bin\Debug\Podaci o radnicima (.Net).exe
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\bin\Debug\Podaci o radnicima (.Net).pdb
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).csproj.AssemblyReference.cache
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).csproj.SuggestedBindingRedirects.cache
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.Form1.resources
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.Properties.Resources.resources
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).csproj.GenerateResource.cache
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).csproj.CoreCompileInputs.cache
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).exe
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).pdb
