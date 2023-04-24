@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.gBoxVrednost = new System.Windows.Forms.GroupBox();
             this.rbnManje = new System.Windows.Forms.RadioButton();
             this.rbnVece = new System.Windows.Forms.RadioButton();
@@ -61,13 +60,6 @@
             this.label1.Size = new System.Drawing.Size(181, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Unesite vrednosti koji zelite da imate ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(224, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // gBoxVrednost
             // 
@@ -281,7 +273,6 @@
             this.Controls.Add(this.gboxIznos);
             this.Controls.Add(this.gboxGrupa);
             this.Controls.Add(this.gBoxVrednost);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "UpitiZaPlatuPremiju";
             this.Text = "Upit za platu premiju";
@@ -300,7 +291,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox gBoxVrednost;
         private System.Windows.Forms.RadioButton rbnManje;
         private System.Windows.Forms.RadioButton rbnVece;
