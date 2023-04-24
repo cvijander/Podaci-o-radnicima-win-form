@@ -224,5 +224,11 @@ namespace Podaci_o_radnicima__.Net_
             UpitiZaPlatuPremiju plataPremija = new UpitiZaPlatuPremiju();
             plataPremija.Show();
         }
+
+        private void imeIPrezimeZaSvakogRadnikaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImeiPrezime imPr = new ImeiPrezime();
+            imPr.Show();
+        }
     }
 }

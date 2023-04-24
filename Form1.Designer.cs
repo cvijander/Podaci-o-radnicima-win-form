@@ -56,6 +56,7 @@
             this.aplikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zatvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.plataIPremijaSaIznosomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -263,7 +264,8 @@
             // 
             this.upitiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.radniciToolStripMenuItem,
-            this.plataIPremijaSaIznosomToolStripMenuItem});
+            this.plataIPremijaSaIznosomToolStripMenuItem,
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem});
             this.upitiToolStripMenuItem.Name = "upitiToolStripMenuItem";
             this.upitiToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.upitiToolStripMenuItem.Text = "Upiti";
@@ -296,6 +298,13 @@
             this.plataIPremijaSaIznosomToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.plataIPremijaSaIznosomToolStripMenuItem.Text = "Plata i premija sa iznosom";
             this.plataIPremijaSaIznosomToolStripMenuItem.Click += new System.EventHandler(this.plataIPremijaSaIznosomToolStripMenuItem_Click);
+            // 
+            // imeIPrezimeZaSvakogRadnikaToolStripMenuItem
+            // 
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem.Name = "imeIPrezimeZaSvakogRadnikaToolStripMenuItem";
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem.Text = "Ime i prezime za svakog radnika";
+            this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem.Click += new System.EventHandler(this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -364,6 +373,7 @@
         private System.Windows.Forms.ToolStripMenuItem dodaj200RadnikaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem plataIPremijaSaIznosomToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem imeIPrezimeZaSvakogRadnikaToolStripMenuItem;
     }
 }
 
