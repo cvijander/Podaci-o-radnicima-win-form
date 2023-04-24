@@ -66,7 +66,9 @@ namespace Podaci_o_radnicima__.Net_
                 OleDbCommand komanda = new OleDbCommand(tekstKomande, con);
                 komanda.ExecuteNonQuery();
                 con.Close();
+                //ObrisiPoljaRadnika();
                 PrikaziRadnike();
+
                 MessageBox.Show("Novi radnik je uspesno upisan.");
             }
             catch (Exception x)
@@ -106,11 +108,16 @@ namespace Podaci_o_radnicima__.Net_
 
         private void button3_Click(object sender, EventArgs e)
         {
-            txtSifraRadnika.Clear();
-            txtImeRadnika.Clear();
-            txtPrezimeRadnika.Clear();
-            txtPlataRandnika.Clear();
-            txtPremijaRadnika.Clear();
+            ObrisiPoljaRadnika();
+        }
+
+        private void ObrisiPoljaRadnika()
+        {
+            txtSifraRadnika.Text = "";
+            txtImeRadnika.Text = "";
+            txtPrezimeRadnika.Text = "";
+            txtPlataRandnika.Text = "";
+            txtPremijaRadnika.Text = "";
             dateTimePicker1.Value = DateTime.Now;
         }
 
@@ -162,10 +169,10 @@ namespace Podaci_o_radnicima__.Net_
                 }
                 else
                 {
-                    txtImeRadnika.Clear();
-                    txtPrezimeRadnika.Clear();
-                    txtPlataRandnika.Clear();
-                    txtPremijaRadnika.Clear();
+                    txtImeRadnika.Text = "";
+                    txtPrezimeRadnika.Text = "";
+                    txtPlataRandnika.Text = "";
+                    txtPremijaRadnika.Text = "";
                     dateTimePicker1.Value = DateTime.Now;
                 }
             }
@@ -183,6 +190,33 @@ namespace Podaci_o_radnicima__.Net_
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void zatvoriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void radniciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Upiti upiti = new Upiti();
+            upiti.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+
+        private void dodaj200RadnikaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dodaj200Radnika dRadnike = new Dodaj200Radnika();
+            dRadnike.Show();
+        }
+
+        private void dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DodajRadnikePrekoImenaiPrezimena dRadnikePrekoImePrezime = new DodajRadnikePrekoImenaiPrezimena();
+            dRadnikePrekoImePrezime.Show();
         }
     }
 }

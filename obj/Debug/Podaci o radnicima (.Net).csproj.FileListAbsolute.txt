@@ -9,3 +9,5 @@ C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Po
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).csproj.CoreCompileInputs.cache
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).exe
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci o radnicima (.Net).pdb
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.Dodaj200Radnika.resources
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.DodajRadnikePrekoImenaiPrezimena.resources
