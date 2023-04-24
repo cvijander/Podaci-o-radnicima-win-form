@@ -218,5 +218,11 @@ namespace Podaci_o_radnicima__.Net_
             DodajRadnikePrekoImenaiPrezimena dRadnikePrekoImePrezime = new DodajRadnikePrekoImenaiPrezimena();
             dRadnikePrekoImePrezime.Show();
         }
+
+        private void plataIPremijaSaIznosomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpitiZaPlatuPremiju plataPremija = new UpitiZaPlatuPremiju();
+            plataPremija.Show();
+        }
     }
 }

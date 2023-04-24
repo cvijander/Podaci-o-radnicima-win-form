@@ -73,6 +73,12 @@
     <Compile Include="Upiti.Designer.cs">
       <DependentUpon>Upiti.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpitiZaPlatuPremiju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpitiZaPlatuPremiju.Designer.cs">
+      <DependentUpon>UpitiZaPlatuPremiju.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dodaj200Radnika.resx">
       <DependentUpon>Dodaj200Radnika.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +97,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Upiti.resx">
+      <DependentUpon>Upiti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpitiZaPlatuPremiju.resx">
+      <DependentUpon>UpitiZaPlatuPremiju.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

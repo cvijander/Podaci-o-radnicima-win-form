@@ -49,12 +49,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.podaciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.upitiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aplikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zatvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodaj200RadnikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.upitiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radniciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aplikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zatvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.plataIPremijaSaIznosomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -244,13 +245,35 @@
             this.podaciToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.podaciToolStripMenuItem.Text = "Podaci";
             // 
+            // dodaj200RadnikaToolStripMenuItem
+            // 
+            this.dodaj200RadnikaToolStripMenuItem.Name = "dodaj200RadnikaToolStripMenuItem";
+            this.dodaj200RadnikaToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.dodaj200RadnikaToolStripMenuItem.Text = "Dodaj vise radnika odjednom";
+            this.dodaj200RadnikaToolStripMenuItem.Click += new System.EventHandler(this.dodaj200RadnikaToolStripMenuItem_Click);
+            // 
+            // dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem
+            // 
+            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Name = "dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem";
+            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
+            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Text = "Dodaj vise radnika unoseci ime i prezime";
+            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Click += new System.EventHandler(this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem_Click);
+            // 
             // upitiToolStripMenuItem
             // 
             this.upitiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.radniciToolStripMenuItem});
+            this.radniciToolStripMenuItem,
+            this.plataIPremijaSaIznosomToolStripMenuItem});
             this.upitiToolStripMenuItem.Name = "upitiToolStripMenuItem";
             this.upitiToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.upitiToolStripMenuItem.Text = "Upiti";
+            // 
+            // radniciToolStripMenuItem
+            // 
+            this.radniciToolStripMenuItem.Name = "radniciToolStripMenuItem";
+            this.radniciToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.radniciToolStripMenuItem.Text = "Max i min za platu, premiju ";
+            this.radniciToolStripMenuItem.Click += new System.EventHandler(this.radniciToolStripMenuItem_Click);
             // 
             // aplikacijaToolStripMenuItem
             // 
@@ -263,30 +286,16 @@
             // zatvoriToolStripMenuItem
             // 
             this.zatvoriToolStripMenuItem.Name = "zatvoriToolStripMenuItem";
-            this.zatvoriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zatvoriToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.zatvoriToolStripMenuItem.Text = "Zatvori ";
             this.zatvoriToolStripMenuItem.Click += new System.EventHandler(this.zatvoriToolStripMenuItem_Click);
             // 
-            // radniciToolStripMenuItem
+            // plataIPremijaSaIznosomToolStripMenuItem
             // 
-            this.radniciToolStripMenuItem.Name = "radniciToolStripMenuItem";
-            this.radniciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.radniciToolStripMenuItem.Text = "prema plati ";
-            this.radniciToolStripMenuItem.Click += new System.EventHandler(this.radniciToolStripMenuItem_Click);
-            // 
-            // dodaj200RadnikaToolStripMenuItem
-            // 
-            this.dodaj200RadnikaToolStripMenuItem.Name = "dodaj200RadnikaToolStripMenuItem";
-            this.dodaj200RadnikaToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.dodaj200RadnikaToolStripMenuItem.Text = "Dodaj vise radnika odjednom";
-            this.dodaj200RadnikaToolStripMenuItem.Click += new System.EventHandler(this.dodaj200RadnikaToolStripMenuItem_Click);
-            // 
-            // dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem
-            // 
-            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Name = "dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem";
-            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Size = new System.Drawing.Size(288, 22);
-            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Text = "Dodaj vise radnika unoseci ime i prezime";
-            this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem.Click += new System.EventHandler(this.dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem_Click);
+            this.plataIPremijaSaIznosomToolStripMenuItem.Name = "plataIPremijaSaIznosomToolStripMenuItem";
+            this.plataIPremijaSaIznosomToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
+            this.plataIPremijaSaIznosomToolStripMenuItem.Text = "Plata i premija sa iznosom";
+            this.plataIPremijaSaIznosomToolStripMenuItem.Click += new System.EventHandler(this.plataIPremijaSaIznosomToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -354,6 +363,7 @@
         private System.Windows.Forms.ToolStripMenuItem radniciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodaj200RadnikaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dodajViseRadnikaUnoseciImeIPrezimeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem plataIPremijaSaIznosomToolStripMenuItem;
     }
 }
 
