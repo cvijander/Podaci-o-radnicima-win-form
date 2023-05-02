@@ -230,5 +230,17 @@ namespace Podaci_o_radnicima__.Net_
             ImeiPrezime imPr = new ImeiPrezime();
             imPr.Show();
         }
+
+        private void radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ZaposleniVreme zapVreme = new ZaposleniVreme();
+            zapVreme.Show();
+        }
+
+        private void radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SadrzeSlovo sadrzeSlovo = new SadrzeSlovo();
+            sadrzeSlovo.Show();
+        }
     }
 }

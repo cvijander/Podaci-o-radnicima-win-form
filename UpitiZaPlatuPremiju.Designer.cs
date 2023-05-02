@@ -36,6 +36,9 @@
             this.rbnPremija = new System.Windows.Forms.RadioButton();
             this.rbnPlata = new System.Windows.Forms.RadioButton();
             this.gboxIznos = new System.Windows.Forms.GroupBox();
+            this.rbn5000 = new System.Windows.Forms.RadioButton();
+            this.rbn150000 = new System.Windows.Forms.RadioButton();
+            this.rbn125000 = new System.Windows.Forms.RadioButton();
             this.rbn100000 = new System.Windows.Forms.RadioButton();
             this.rbn75000 = new System.Windows.Forms.RadioButton();
             this.rbn50000 = new System.Windows.Forms.RadioButton();
@@ -43,9 +46,10 @@
             this.rbn15000 = new System.Windows.Forms.RadioButton();
             this.btnPrikazi = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rbn125000 = new System.Windows.Forms.RadioButton();
-            this.rbn150000 = new System.Windows.Forms.RadioButton();
-            this.rbn5000 = new System.Windows.Forms.RadioButton();
+            this.txtUkupno = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUnos = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.gBoxVrednost.SuspendLayout();
             this.gboxGrupa.SuspendLayout();
             this.gboxIznos.SuspendLayout();
@@ -57,9 +61,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 13);
+            this.label1.Size = new System.Drawing.Size(264, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Unesite vrednosti koji zelite da imate ";
+            this.label1.Text = "Unesite vrednosti koji zelite ili odaberite od ponudjenih ";
             // 
             // gBoxVrednost
             // 
@@ -149,6 +153,42 @@
             this.gboxIznos.TabStop = false;
             this.gboxIznos.Text = "Iznos";
             // 
+            // rbn5000
+            // 
+            this.rbn5000.AutoSize = true;
+            this.rbn5000.Location = new System.Drawing.Point(12, 20);
+            this.rbn5000.Name = "rbn5000";
+            this.rbn5000.Size = new System.Drawing.Size(49, 17);
+            this.rbn5000.TabIndex = 7;
+            this.rbn5000.TabStop = true;
+            this.rbn5000.Text = "5000";
+            this.rbn5000.UseVisualStyleBackColor = true;
+            this.rbn5000.CheckedChanged += new System.EventHandler(this.rbn5000_CheckedChanged);
+            // 
+            // rbn150000
+            // 
+            this.rbn150000.AutoSize = true;
+            this.rbn150000.Location = new System.Drawing.Point(427, 63);
+            this.rbn150000.Name = "rbn150000";
+            this.rbn150000.Size = new System.Drawing.Size(61, 17);
+            this.rbn150000.TabIndex = 6;
+            this.rbn150000.TabStop = true;
+            this.rbn150000.Text = "150000";
+            this.rbn150000.UseVisualStyleBackColor = true;
+            this.rbn150000.CheckedChanged += new System.EventHandler(this.rbn150000_CheckedChanged);
+            // 
+            // rbn125000
+            // 
+            this.rbn125000.AutoSize = true;
+            this.rbn125000.Location = new System.Drawing.Point(286, 63);
+            this.rbn125000.Name = "rbn125000";
+            this.rbn125000.Size = new System.Drawing.Size(61, 17);
+            this.rbn125000.TabIndex = 5;
+            this.rbn125000.TabStop = true;
+            this.rbn125000.Text = "125000";
+            this.rbn125000.UseVisualStyleBackColor = true;
+            this.rbn125000.CheckedChanged += new System.EventHandler(this.rbn125000_CheckedChanged);
+            // 
             // rbn100000
             // 
             this.rbn100000.AutoSize = true;
@@ -227,47 +267,49 @@
             this.dataGridView1.Size = new System.Drawing.Size(1042, 334);
             this.dataGridView1.TabIndex = 6;
             // 
-            // rbn125000
+            // txtUkupno
             // 
-            this.rbn125000.AutoSize = true;
-            this.rbn125000.Location = new System.Drawing.Point(286, 63);
-            this.rbn125000.Name = "rbn125000";
-            this.rbn125000.Size = new System.Drawing.Size(61, 17);
-            this.rbn125000.TabIndex = 5;
-            this.rbn125000.TabStop = true;
-            this.rbn125000.Text = "125000";
-            this.rbn125000.UseVisualStyleBackColor = true;
-            this.rbn125000.CheckedChanged += new System.EventHandler(this.rbn125000_CheckedChanged);
+            this.txtUkupno.Location = new System.Drawing.Point(955, 55);
+            this.txtUkupno.Name = "txtUkupno";
+            this.txtUkupno.Size = new System.Drawing.Size(92, 20);
+            this.txtUkupno.TabIndex = 7;
             // 
-            // rbn150000
+            // label2
             // 
-            this.rbn150000.AutoSize = true;
-            this.rbn150000.Location = new System.Drawing.Point(427, 63);
-            this.rbn150000.Name = "rbn150000";
-            this.rbn150000.Size = new System.Drawing.Size(61, 17);
-            this.rbn150000.TabIndex = 6;
-            this.rbn150000.TabStop = true;
-            this.rbn150000.Text = "150000";
-            this.rbn150000.UseVisualStyleBackColor = true;
-            this.rbn150000.CheckedChanged += new System.EventHandler(this.rbn150000_CheckedChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(773, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Ukupno radnika sa tom vrednoscu :";
             // 
-            // rbn5000
+            // txtUnos
             // 
-            this.rbn5000.AutoSize = true;
-            this.rbn5000.Location = new System.Drawing.Point(12, 20);
-            this.rbn5000.Name = "rbn5000";
-            this.rbn5000.Size = new System.Drawing.Size(49, 17);
-            this.rbn5000.TabIndex = 7;
-            this.rbn5000.TabStop = true;
-            this.rbn5000.Text = "5000";
-            this.rbn5000.UseVisualStyleBackColor = true;
-            this.rbn5000.CheckedChanged += new System.EventHandler(this.rbn5000_CheckedChanged);
+            this.txtUnos.Location = new System.Drawing.Point(282, 48);
+            this.txtUnos.Name = "txtUnos";
+            this.txtUnos.Size = new System.Drawing.Size(100, 20);
+            this.txtUnos.TabIndex = 9;
+            this.txtUnos.TextChanged += new System.EventHandler(this.txtUnos_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(496, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "U tekstualno polje ili unosite vrednosti ili dole odabirom mozete birati neku od " +
+    "ponudjenih 5000 ...150000";
             // 
             // UpitiZaPlatuPremiju
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 647);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtUnos);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtUkupno);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrikazi);
             this.Controls.Add(this.gboxIznos);
@@ -276,6 +318,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UpitiZaPlatuPremiju";
             this.Text = "Upit za platu premiju";
+            this.Load += new System.EventHandler(this.UpitiZaPlatuPremiju_Load);
             this.gBoxVrednost.ResumeLayout(false);
             this.gBoxVrednost.PerformLayout();
             this.gboxGrupa.ResumeLayout(false);
@@ -308,5 +351,9 @@
         private System.Windows.Forms.RadioButton rbn5000;
         private System.Windows.Forms.RadioButton rbn150000;
         private System.Windows.Forms.RadioButton rbn125000;
+        private System.Windows.Forms.TextBox txtUkupno;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUnos;
+        private System.Windows.Forms.Label label3;
     }
 }

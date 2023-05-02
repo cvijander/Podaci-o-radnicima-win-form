@@ -18,6 +18,7 @@ namespace Podaci_o_radnicima__.Net_
         private string grupa;
         private string vrednost;
         private string iznos;
+        private int izn;
 
         public UpitiZaPlatuPremiju()
         {
@@ -87,8 +88,15 @@ namespace Podaci_o_radnicima__.Net_
             try
             {
                 konekcija.Open();
-                int iz = int.Parse(iznos);
-                string tekstKomande = "select * from Radnik where " + grupa + "" + vrednost + "" + iz + "";
+                if (txtUnos.Text == "")
+                {
+                    izn = int.Parse(iznos);
+                }
+                else
+                {
+                    izn = int.Parse(txtUnos.Text);
+                }
+                string tekstKomande = "select * from Radnik where " + grupa + "" + vrednost + "" + izn + "";
                 OleDbCommand komanda = new OleDbCommand(tekstKomande, konekcija);
                 DataTable tabela = new DataTable();
                 OleDbDataAdapter adapter = new OleDbDataAdapter(komanda);
@@ -98,6 +106,32 @@ namespace Podaci_o_radnicima__.Net_
             catch (Exception x)
             {
                 MessageBox.Show("Greska " + x.Message);
+            }
+            finally
+            {
+                if (konekcija.State == ConnectionState.Open)
+                    konekcija.Close();
+            }
+
+            try
+            {
+                konekcija.Open();
+                if (txtUnos.Text == "")
+                {
+                    izn = int.Parse(iznos);
+                }
+                else
+                {
+                    izn = int.Parse(txtUnos.Text);
+                }
+
+                string tk = "select COUNT (sfRadnik) from Radnik where " + grupa + "" + vrednost + "" + izn + "";
+                OleDbCommand komanda = new OleDbCommand(tk, konekcija);
+                txtUkupno.Text = komanda.ExecuteScalar().ToString();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show("Greska prilikom prikazivanja broja " + x.Message);
             }
             finally
             {
@@ -122,6 +156,16 @@ namespace Podaci_o_radnicima__.Net_
         {
             if (rbn150000.Checked == true)
                 iznos = "150000";
+        }
+
+        private void txtUnos_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpitiZaPlatuPremiju_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
