@@ -70,6 +70,18 @@
     <Compile Include="ImeiPrezime.Designer.cs">
       <DependentUpon>ImeiPrezime.cs</DependentUpon>
     </Compile>
+    <Compile Include="legitimacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legitimacija.Designer.cs">
+      <DependentUpon>legitimacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NapraviLegitimaciju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NapraviLegitimaciju.Designer.cs">
+      <DependentUpon>NapraviLegitimaciju.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radnik.cs" />
@@ -108,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ImeiPrezime.resx">
       <DependentUpon>ImeiPrezime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="legitimacija.resx">
+      <DependentUpon>legitimacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapraviLegitimaciju.resx">
+      <DependentUpon>NapraviLegitimaciju.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

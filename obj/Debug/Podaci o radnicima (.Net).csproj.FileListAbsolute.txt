@@ -16,3 +16,5 @@ C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Po
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.ImeiPrezime.resources
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.ZaposleniVreme.resources
 C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.SadrzeSlovo.resources
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.NapraviLegitimaciju.resources
+C:\Users\Cvijander\source\repos\Relja napredni kurs\Podaci o radnicima (.Net)\Podaci o radnicima (.Net)\obj\Debug\Podaci_o_radnicima__.Net_.legitimacija.resources

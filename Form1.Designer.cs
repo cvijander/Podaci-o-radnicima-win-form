@@ -56,9 +56,11 @@
             this.plataIPremijaSaIznosomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imeIPrezimeZaSvakogRadnikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aplikacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zatvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.legitimacijaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.napraviLegitimacijuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -232,7 +234,8 @@
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.podaciToolStripMenuItem,
             this.upitiToolStripMenuItem,
-            this.aplikacijaToolStripMenuItem});
+            this.aplikacijaToolStripMenuItem,
+            this.legitimacijaToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1174, 24);
@@ -302,6 +305,13 @@
             this.radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem.Text = "Radnici koji su zaposleni pre nekog vremena";
             this.radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem.Click += new System.EventHandler(this.radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem_Click);
             // 
+            // radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem
+            // 
+            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Name = "radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem";
+            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Size = new System.Drawing.Size(354, 22);
+            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Text = "Radnici koji u imenu i prezimenu sadrze neko slovo/a";
+            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Click += new System.EventHandler(this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem_Click);
+            // 
             // aplikacijaToolStripMenuItem
             // 
             this.aplikacijaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -313,16 +323,24 @@
             // zatvoriToolStripMenuItem
             // 
             this.zatvoriToolStripMenuItem.Name = "zatvoriToolStripMenuItem";
-            this.zatvoriToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.zatvoriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zatvoriToolStripMenuItem.Text = "Zatvori ";
             this.zatvoriToolStripMenuItem.Click += new System.EventHandler(this.zatvoriToolStripMenuItem_Click);
             // 
-            // radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem
+            // legitimacijaToolStripMenuItem
             // 
-            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Name = "radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem";
-            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Size = new System.Drawing.Size(354, 22);
-            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Text = "Radnici koji u imenu i prezimenu sadrze neko slovo/a";
-            this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem.Click += new System.EventHandler(this.radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem_Click);
+            this.legitimacijaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.napraviLegitimacijuToolStripMenuItem});
+            this.legitimacijaToolStripMenuItem.Name = "legitimacijaToolStripMenuItem";
+            this.legitimacijaToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.legitimacijaToolStripMenuItem.Text = "Legitimacija";
+            // 
+            // napraviLegitimacijuToolStripMenuItem
+            // 
+            this.napraviLegitimacijuToolStripMenuItem.Name = "napraviLegitimacijuToolStripMenuItem";
+            this.napraviLegitimacijuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.napraviLegitimacijuToolStripMenuItem.Text = "Napravi legitimaciju";
+            this.napraviLegitimacijuToolStripMenuItem.Click += new System.EventHandler(this.napraviLegitimacijuToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -394,6 +412,8 @@
         private System.Windows.Forms.ToolStripMenuItem imeIPrezimeZaSvakogRadnikaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radniciKojiSuZaposleniPreNekogVremenaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radniciKojiUImenuIPrezimenuSadrzeNekoSlovoaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem legitimacijaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem napraviLegitimacijuToolStripMenuItem;
     }
 }
 

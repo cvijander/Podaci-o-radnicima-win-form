@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Podaci_o_radnicima__.Net_
 {
-    internal class Radnik
+    public class Radnik
     {
         private int sifraRadnika;
         private string imeRadnika;
@@ -33,5 +33,10 @@ namespace Podaci_o_radnicima__.Net_
         public DateTime DatumZaposlenja { get => datumZaposlenja; set => datumZaposlenja = value; }
         public int PlataRadnika { get => plataRadnika; set => plataRadnika = value; }
         public int PremijaRadnika { get => premijaRadnika; set => premijaRadnika = value; }
+
+        public override string ToString()
+        {
+            return sifraRadnika + " " + imeRadnika + " " + prezimeRadnika;
+        }
     }
 }

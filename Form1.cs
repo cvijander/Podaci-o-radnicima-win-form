@@ -242,5 +242,11 @@ namespace Podaci_o_radnicima__.Net_
             SadrzeSlovo sadrzeSlovo = new SadrzeSlovo();
             sadrzeSlovo.Show();
         }
+
+        private void napraviLegitimacijuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NapraviLegitimaciju napLegitimaciju = new NapraviLegitimaciju();
+            napLegitimaciju.Show();
+        }
     }
 }
