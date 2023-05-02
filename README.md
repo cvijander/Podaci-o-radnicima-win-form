@@ -13,4 +13,8 @@ Vrednost koju dobijemo vidimo u tekst boxu , dok dvoklikom na to polje mozemo da
 Plata i premija sa iznosom , opet koristeci radio dugmad mozemo da odaberemo platu ili premiju i da li zelimmo da bude vece ili manje od nekoliko iznosa koje imamo 
 Nakon toga sve te vrednosti vidimo u datagridu 
 
-Ime i prezime ...
+Ime i prezime ,unesete ime ili prezime ili cak oba i pritiskom na dugme dobijamo koliko ih ima i izlistane sa strane.
+
+Radnici koji su zaposleni pre nekog vremena, vrsi se odabri vremena ali se nazalost oni ne pokazuju 
+
+Radnici koji imaju u svom imenu ili prezimenu neko slovo ili izraz, pokazuju se u desnom delu ekrana nakon sto smo uneli taj izraz i odabrali ili ime ili prezime i opciju gde se to nalazi.Da li je na pocetku,sredini ili vec zadnje slovo. Pritiskom na dugme dobijamo i broj koliko ih ima kao i njihov spisak. 
